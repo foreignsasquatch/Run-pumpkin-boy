@@ -1,0 +1,7 @@
+-cp src
+-main Main
+-lib raylib-hx
+-lib ase
+-cpp bin
+-D HXCPP_STACK_TRACE
+-D HXCPP_PROFILER

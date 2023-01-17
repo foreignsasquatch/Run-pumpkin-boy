@@ -1,0 +1,35 @@
+_Main.Main_Fields_.main 100.00%/0.00%
+   engine.Application.new 100.0%
+   (internal) 0.0%
+hxcpp.__hxcpp_main 100.00%/0.00%
+   _Main.Main_Fields_.main 100.0%
+   (internal) 0.0%
+engine.Application.new 94.25%/5.75%
+   PlayState.draw 92.8%
+   (internal) 5.8%
+   PlayState.init 1.5%
+PlayState.draw 92.77%/0.00%
+   engine.Level.draw 100.0%
+   (internal) 0.0%
+PlayState.init 1.48%/0.00%
+   engine.Level.load 50.0%
+   engine.Level.new 26.1%
+   engine.assets.Assets.load 23.9%
+   (internal) 0.0%
+engine.Level.load 0.71%/0.03%
+   sys.io.File.getContent 87.0%
+   haxe.format.JsonParser.doParse 8.7%
+   (internal) 4.3%
+engine.Level.new 0.10%/0.29%
+   (internal) 75.0%
+   haxe.ds.IntMap.set 25.0%
+haxe.format.JsonParser.doParse 0.06%/0.00%
+   haxe.format.JsonParser.parseRec 100.0%
+   (internal) 0.0%
+haxe.format.JsonParser.parseRec 0.06%/0.06%
+   haxe.format.JsonParser.parseRec 50.0%
+   (internal) 50.0%
+haxe.ds.IntMap.set 0.00%/0.10%
+engine.assets.Assets.load 0.00%/0.35%
+sys.io.File.getContent 0.00%/0.64%
+engine.Level.draw 0.00%/92.77%
