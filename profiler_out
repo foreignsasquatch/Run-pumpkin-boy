@@ -1,35 +1,72 @@
-_Main.Main_Fields_.main 100.00%/0.00%
-   engine.Application.new 100.0%
-   (internal) 0.0%
 hxcpp.__hxcpp_main 100.00%/0.00%
    _Main.Main_Fields_.main 100.0%
    (internal) 0.0%
-engine.Application.new 94.25%/5.75%
-   PlayState.draw 92.8%
-   (internal) 5.8%
-   PlayState.init 1.5%
-PlayState.draw 92.77%/0.00%
-   engine.Level.draw 100.0%
+_Main.Main_Fields_.main 100.00%/0.00%
+   engine.Application.new 100.0%
    (internal) 0.0%
-PlayState.init 1.48%/0.00%
-   engine.Level.load 50.0%
-   engine.Level.new 26.1%
-   engine.assets.Assets.load 23.9%
+engine.Application.new 3.56%/96.44%
+   (internal) 96.4%
+   PlayState.draw 2.4%
+   PlayState.init 1.0%
+   PlayState.step 0.2%
+PlayState.draw 1.62%/0.81%
+   engine.Level.draw 66.7%
+   (internal) 33.3%
+PlayState.init 0.93%/0.05%
+   engine.Level.new 56.4%
+   engine.Level.load 25.6%
+   engine.assets.Assets.load 12.8%
+   (internal) 5.1%
+engine.Level.load 0.25%/0.00%
+   haxe.format.JsonParser.doParse 90.0%
+   sys.io.File.getContent 10.0%
    (internal) 0.0%
-engine.Level.load 0.71%/0.03%
-   sys.io.File.getContent 87.0%
-   haxe.format.JsonParser.doParse 8.7%
-   (internal) 4.3%
-engine.Level.new 0.10%/0.29%
-   (internal) 75.0%
-   haxe.ds.IntMap.set 25.0%
-haxe.format.JsonParser.doParse 0.06%/0.00%
+haxe.format.JsonParser.doParse 0.23%/0.00%
    haxe.format.JsonParser.parseRec 100.0%
    (internal) 0.0%
-haxe.format.JsonParser.parseRec 0.06%/0.06%
-   haxe.format.JsonParser.parseRec 50.0%
-   (internal) 50.0%
-haxe.ds.IntMap.set 0.00%/0.10%
-engine.assets.Assets.load 0.00%/0.35%
-sys.io.File.getContent 0.00%/0.64%
-engine.Level.draw 0.00%/92.77%
+haxe.format.JsonParser.parseRec 0.23%/0.23%
+   haxe.format.JsonParser.parseRec 60.9%
+   (internal) 39.1%
+en.Actor.step 0.05%/0.00%
+   engine.Entity.updatePhysics 100.0%
+   (internal) 0.0%
+PlayState.step 0.05%/0.10%
+   (internal) 66.7%
+   en.Actor.step 33.3%
+haxe.zip.HuffTools.make 0.03%/0.00%
+   haxe.zip.HuffTools.treeMake 100.0%
+   (internal) 0.0%
+ase.Ase.fromBytes 0.03%/0.00%
+   ase.Frame.fromBytes 100.0%
+   (internal) 0.0%
+ase.Frame.fromBytes 0.03%/0.00%
+   ase.chunks.Chunk.fromBytes 100.0%
+   (internal) 0.0%
+haxe.zip.InflateImpl.buildFixedHuffman 0.03%/0.00%
+   haxe.zip.HuffTools.make 100.0%
+   (internal) 0.0%
+haxe.zip.InflateImpl.run 0.03%/0.00%
+   haxe.zip.InflateImpl.new 100.0%
+   (internal) 0.0%
+haxe.zip.InflateImpl.new 0.03%/0.00%
+   haxe.zip.InflateImpl.buildFixedHuffman 100.0%
+   (internal) 0.0%
+engine.assets.Aseprite.loadTexture 0.03%/0.00%
+   ase.Ase.fromBytes 100.0%
+   (internal) 0.0%
+ase.chunks.Chunk.fromBytes 0.03%/0.00%
+   ase.chunks.CelChunk.fromBytes 100.0%
+   (internal) 0.0%
+ase.chunks.CelChunk.fromBytes 0.03%/0.00%
+   haxe.zip.InflateImpl.run 100.0%
+   (internal) 0.0%
+haxe.zip.HuffTools.treeMake 0.03%/0.03%
+   haxe.zip.HuffTools.treeMake 83.3%
+   (internal) 16.7%
+engine.assets.Assets.load 0.03%/0.10%
+   (internal) 80.0%
+   engine.assets.Aseprite.loadTexture 20.0%
+sys.io.File.getContent 0.00%/0.03%
+engine.Entity.updatePhysics 0.00%/0.05%
+engine.Level.new 0.00%/0.56%
+engine.Level.draw 0.00%/1.62%
