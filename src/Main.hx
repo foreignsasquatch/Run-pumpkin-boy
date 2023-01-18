@@ -1,6 +1,6 @@
-import editor.EditorState;
+class Main {
 
-function main() {
-  // new engine.Application(1280, 720, "Deal with the devil", new EditorState());
-  new engine.Application(1280, 720, "Deal with the devil", new PlayState());
+  static function main() {
+    new engine.Application(1280, 720, "Run pumpkin boy", new PlayState());
+ }
 }

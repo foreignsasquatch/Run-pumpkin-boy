@@ -2,11 +2,11 @@ package engine;
 
 // Common utils just small functions
 class Utils {
-  public static function followCameraInBounds(e:Entity, bounds:Rl.Rectangle):Rl.Camera2D {
+  public static function followCameraInBounds(e:Entity, bounds:Rl.Rectangle, rotation:Float, zoom:Float):Rl.Camera2D {
     var width = 1280;
     var height = 720;
 
-    var c = Rl.Camera2D.create(Rl.Vector2.create(Rl.getScreenWidth() / 2, Rl.getScreenHeight() / 2), Rl.Vector2.create(e.xx, e.yy), 0, 2.5);
+    var c = Rl.Camera2D.create(Rl.Vector2.create(Rl.getScreenWidth() / 2, Rl.getScreenHeight() / 2), Rl.Vector2.create(e.xx, e.yy), rotation, zoom);
     c.target = Rl.Vector2.create(e.xx, e.yy);
     c.offset = Rl.Vector2.create(Rl.getScreenWidth() / 2, Rl.getScreenHeight() / 2);
 

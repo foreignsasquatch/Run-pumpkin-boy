@@ -19,6 +19,7 @@ class Entity {
   public var radius:Float;
 
   public var isColliding = false;
+  public var isCollidingWithEn = false;
   public var collisionLayer:Level;
 
   public var texture:Rl.Texture;
@@ -36,7 +37,6 @@ class Entity {
 
   public function dispose() {
     ALL.remove(this);
-    Rl.unloadTexture(texture);
   }
 
   public function setCoords(x:Float, y:Float) {
@@ -120,6 +120,9 @@ class Entity {
           dy -= Math.sin(ang) * repelPower * force;
           e.dx += Math.cos(ang) * repelPower * force;
           e.dy += Math.sin(ang) * repelPower * force;
+          isCollidingWithEn = true;
+        } else {
+          isCollidingWithEn = false;
         }
       }
     }
@@ -132,5 +135,8 @@ class Entity {
   }
 
   public function debugDraw() {
+    Rl.drawRectangleLinesEx(Rl.Rectangle.create(xx - 16 / 2, yy - 16 / 2, 16, 16), 1, Rl.Colors.RED);
+    Rl.drawCircleLines(Std.int(xx), Std.int(yy), radius, Rl.Colors.RED);
+    Rl.drawCircleV(Rl.Vector2.create(xx, yy), 1, Rl.Colors.RED);
   }
 }
